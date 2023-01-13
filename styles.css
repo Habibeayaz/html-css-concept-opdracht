@@ -1,2 +1,67 @@
-/*
-Hier ga ik de styles plaatsen*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-basis:
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+body {
+    font: font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-content-container {
+    width: 100%;
+    display: flex;
+    justify content: center;
+}
+
+.inner-content-container {
+    display: flex;
+    flex basis: 1400px;
+    flex shrink: 1;
+    flex grow: 0;
+    flex direction: column;
+    margin: 0 50px;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+.header-content_navigation {
+    border: 2px dashed
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    widht: 100%;
+}
+
+.header-menu_list {
+    border: 2px dashed orange;
+    flex-basis: 400px;
+    min-height: 100px;
+    flex-shrink: 1
+    flex-grow: 0
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
