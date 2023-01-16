@@ -84,8 +84,16 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
+}
 
+/*img {
+    width: 100%;
+}*/
 
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 /* --------------- 4.2 Introduction ------------------- */
 
