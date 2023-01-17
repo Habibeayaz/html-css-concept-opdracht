@@ -74,8 +74,19 @@ body {
     justify-content: space-evenly;
 }
 
-.header-menu_item {
-    list-style-type: none;
+.header-menu_item_1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu_item_2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu_item_3 a {
+    color: white;
+    text-decoration: none;
 }
 
 .header-content__cta {
@@ -135,6 +146,7 @@ body {
     flex-grow: 0;
     flex-shrink: 1;
 }
+
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
