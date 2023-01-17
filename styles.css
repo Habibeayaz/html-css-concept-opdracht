@@ -39,6 +39,7 @@ body {
 .inner-content-container {
     display: flex;
     flex basis: 1400px;
+    height: 600px;
     flex shrink: 1;
     flex grow: 0;
     flex direction: column;
@@ -52,7 +53,7 @@ body {
 /* --------------- 4.1 Header ------------------------- */
 
 .header-content_navigation {
-    border: 2px dashed blue;
+    background: #4845E4;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -60,9 +61,10 @@ body {
 }
 
 .header-menu_list {
-    border: 2px dashed orange;
+    background: #4845E4;
+    color: white;
     flex-basis: 400px;
-    min-height: 100px;
+    min-height: 25px;
     flex-shrink: 1
     flex-grow: 0
     list-style-type: none;
@@ -70,8 +72,13 @@ body {
     justify-content: space-evenly;
 }
 
+.header-menu_item {
+    list-style-type: none;
+}
+
 .header-content__cta {
-    background:
+    background: #4845E4;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
