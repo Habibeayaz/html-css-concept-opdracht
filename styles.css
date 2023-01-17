@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /*Paars #5722CD;
 Blauw #4845E4;
 Roze #ED4385;
@@ -5,10 +9,6 @@ Zwart #0C0C0C (voor standaard tekst);
 Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
                                                                                  Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
 Grijs #7A7A7A (voor de service-tegel tekst);*/
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 
 ////////////////////////*/
 
@@ -32,8 +32,10 @@ body {
 
 .outer-content-container {
     width: 100%;
+    height: 400px;
     display: flex;
     justify content: center;
+
 }
 
 .inner-content-container {
@@ -77,16 +79,47 @@ body {
 }
 
 .header-content__cta {
-    background: #4845E4;
     width: 100%;
+    background: linear-gradient(0deg, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: blue;
+    color: white;
     position: relative;
     bottom: 0;
 }
 
+.header-content__cta h1{
+    font-family: Merriweather, sans-serif;
+    color: #ffffff;
+    font-size: 3.4rem;
+    /*font-size: 60px;*/
+    font-weight: 500;
+    text-align: center;
+}
+
+.header-content__cta h2 {
+    text-align: center;
+    color: #ffffff;
+    /*font-size: 1.75rem;*/
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.button_cta {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    /*letter-spacing: 1px;*/
+    background-color: #ed4385;
+    border: #ed4385;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 21px 11px -10px rgb(0 0 0 / 20%);
+    padding: 25px 40px 25px 40px;
+
+}
 .header_squiggle {
     position: absolute;
     width: 300px;
