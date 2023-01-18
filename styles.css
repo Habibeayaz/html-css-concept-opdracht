@@ -265,38 +265,116 @@ body {
 .inner-container_services {
     display: flex;
     justify-content: center;
+    flex-basis: 100%;
     gap: 30px;
     margin: 20px 20px 20px 20px;
-    /*flex-basis: 400px;*/
+
     /*flex-wrap: wrap;*/
-    /*align-items: stretch;*/
+    /*align-content: flex-start;*/
 }
 
 .info-article {
     position: relative;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: #4845E4;
     box-shadow: 0px 11px 16px 0px rgb(0 0 0 / 10%);
-
-   /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-basis: 300px;
     flex-grow: 0;
-    flex-shrink: 1;*/
+    flex-shrink: 1;
+    padding: 20px 20px 20px 20px;
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-end;*/
+    flex-basis: auto;
+
+}
+
+.info-article img {
+    width: 30%;
+
 }
 
 .info-article h2 {
     font-family: Merriweather, sans-serif;
+    color: #5722CD;
 }
 .info-article h3 {
     font-weight: 400;
     font-size: 14px;
     color: #7A7A7A;
+}
+
+.form-field {
+    display: flex;
+    color: white;
+    background-color: #4845E4;
+    border-radius: 3px;
+    padding: 1.8em;
+}
+
+.contact {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+
+.contact input {
+    width: 100%;
+}
+
+.contact-input-message {
+    height: 200px;
+}
+
+
+.contact-input-message::placeholder {
+    /*alignment placeholder text lukt niet*/
+}
+
+.contact input,
+.contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+.contact button {
+    background: gray;
+    color: #ffffff;
+    border: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #ed4385;
+    border: #ed4385;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 21px 11px -10px rgb(0 0 0 / 20%);
+    padding: 20px 100px 20px 100px;
+    margin-top: 1em;
+    margin-left: 40%;
+}
+
+.form-content {
+    background-color: #4845E4;
+    color: white;
+
+}
+
+
+.form-content h2 {
+    font-family: Merriweather, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-content h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
 }
 
 /* --------------- 4.2 Introduction ------------------- */
