@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+                                                                                 Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);*/
+
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
@@ -9,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    flex-basis:
+    flex-basis: 1200px;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -18,33 +26,32 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+/* ------------------------------- 4. Areas ---------------------------------------- */
 
-/* --------------- 3.1 Reusables ----------------------- */
+/* --------------- 4.1 Header ------------------------- */
 
 .outer-content-container {
-    width: 100%;
+    /*width: 100%;*/
+    height: 600px;
     display: flex;
     justify content: center;
 }
 
 .inner-content-container {
     display: flex;
-    flex basis: 1400px;
+    flex basis: 1200px;
     flex shrink: 1;
     flex grow: 0;
     flex direction: column;
     margin: 0 50px;
 }
 
-/* --------------- 3.2 Other --------------------------- */
-
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
 
 .header-content_navigation {
-    border: 2px dashed
+    background: #4845E4;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -52,16 +59,364 @@ body {
 }
 
 .header-menu_list {
-    border: 2px dashed orange;
+    background: #4845E4;
+    color: white;
     flex-basis: 400px;
-    min-height: 100px;
-    flex-shrink: 1
-    flex-grow: 0
+    min-height: 25px;
+    flex-shrink: 1;
+    flex-grow: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-/* --------------- 4.2 Introduction ------------------- */
+.header-menu_item_1 a  {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu_item_2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu_item_3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-content__cta {
+    flex-basis: 100vw;
+    background: linear-gradient(0deg, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    position: relative;
+    bottom: 0;
+}
+
+.header-content__cta h1 {
+    font-family: Merriweather, sans-serif;
+    color: #ffffff;
+    font-size: 3.4rem;
+    /*font-size: 60px;*/
+    font-weight: 500;
+    text-align: center;
+}
+
+.header-content__cta h2 {
+    text-align: center;
+    color: #ffffff;
+    /*font-size: 1.75rem;*/
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.button_cta {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ed4385;
+    border: #ed4385;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 21px 11px -10px rgb(0 0 0 / 20%);
+    padding: 25px 40px 25px 40px;
+}
+
+.header_squiggle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 500px;
+}
+
+/* --------------- 4.2 Main ------------------------- */
+.main-section {
+    text-align: center;
+    color: #4845E4;
+    font-family: Merriweather, sans-serif;
+    font-size: 1.87rem;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-section h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    margin-top: 75px;
+}
+
+.main-section h4 a {
+    color: #5722CD;
+    text-decoration: none;
+}
+
+.case-studies-rolling-stone {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.image-wrapper_1 {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.case-studies-rolling-stone h2 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 500px;
+    /*font-size: ;*/
+}
+
+.case-studies-rolling-stone h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.case-studies-rolling-stone h4 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5722CD;
+}
+
+.variety {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.image-wrapper_2 {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.variety h2 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 500px;
+    /*font-size: ;*/
+}
+
+.variety h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.variety h4 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5722CD;
+}
+
+.worth {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.image-wrapper_3 {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.worth h2 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 500px;
+    /*font-size: ;*/
+}
+
+.worth h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.worth h4 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5722CD;
+}
+
+.inner-container_services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.info-article {
+    flex-basis: 25%;
+    min-height: 300px;
+    /*width: 32%;*/
+    /*padding-bottom: 32%; *//* Same as width, sets height */
+    padding: 25px 25px 25px 25px;
+    position: relative;
+    border: 1px solid #4845E4;
+    box-shadow: 0px 11px 16px 0px rgb(0 0 0 / 10%);
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.info-article img {
+    width: 20%;
+}
+
+.info-article h2 {
+    font-family: Merriweather, sans-serif;
+    font-size: 28px;
+    color: #5722CD;
+}
+
+.info-article h3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #7A7A7A;
+}
+
+/* --------------- 4.1 Form ------------------------- */
+
+.form-content {
+    background-color: #4845E4;
+    color: white;
+    padding-top: 25px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+
+.form-content h2 {
+    font-family: Merriweather, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-content h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.form-field {
+    display: flex;
+    flex-basis: 100%;
+    color: white;
+    background: linear-gradient(0deg, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 100%);
+    border-radius: 3px;
+    padding: 1.8em;
+}
+
+.contact {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+
+.contact input {
+    width: 100%;
+}
+
+.contact-input-message {
+    height: 200px;
+}
+
+.contact-input-message::placeholder {
+    /*alignment placeholder text lukt niet*/
+}
+
+.contact input,
+.contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.contact button {
+    background: gray;
+    color: #ffffff;
+    border: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #ed4385;
+    border: #ed4385;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 21px 11px -10px rgb(0 0 0 / 20%);
+    padding: 20px 100px 20px 100px;
+    margin-top: 1em;
+    margin-left: 40%;
+}
+
+.form-content {
+    background-color: #4845E4;
+    color: white;
+    padding-top: 25px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+
+
+.form-content h2 {
+    font-family: Merriweather, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-content h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* --------------- 4.4 Footer ------------------- */
+
+.footer {
+    background: black;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding-top: 25px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+p {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 16px;
+    }
+}
